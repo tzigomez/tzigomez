@@ -21,7 +21,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
  
         public IActionResult OnGet(int avionId)
         {
-                Avion=repositorioAviones.GetAvionWithId(avionId);
+                Avion = repositorioAviones.GetAvionWithId(avionId);
                 return Page();
  
         }

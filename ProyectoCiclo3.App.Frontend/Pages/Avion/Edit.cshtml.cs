@@ -11,9 +11,8 @@ namespace ProyectoCiclo3.App.Frontend.Pages
 {
     public class EditAvionModel : PageModel
     {
-        private readonly RepositorioAviones repositorioAviones;
-        [BindProperty]
-        public Aviones Avion {get;set;}
+       private readonly RepositorioAviones repositorioAviones;
+              public Aviones Avion {get;set;}
  
         public EditAvionModel(RepositorioAviones repositorioAviones)
        {
@@ -22,21 +21,9 @@ namespace ProyectoCiclo3.App.Frontend.Pages
  
         public IActionResult OnGet(int avionId)
         {
-            Avion=repositorioAviones.GetAvionWithId(avionId);
-            return Page(); 
-        }
-
-        public IActionResult OnPost()
-        {
-            if(!ModelState.IsValid)
-            {
+                Avion = repositorioAviones.GetAvionWithId(avionId);
                 return Page();
-            }
-            if(Avion.id>0)
-            {
-            Avion = repositorioAviones.Update(Avion);
-            }
-            return RedirectToPage("./List");
+ 
         }
     }
 }

@@ -4,16 +4,32 @@
     var avion = Model.Avion;
 }
  
-<ul class="list-group list-group-flush">
-  <li class="list-group-item"> <b>id: </b> @avion.id</li>
-  <li class="list-group-item"> <b>Marca: </b> @avion.marca</li>
-  <li class="list-group-item"> <b>Modelo: </b> @avion.modelo</li>
-  <li class="list-group-item"><b>Numero Asientos: </b> @avion.numero_asientos</li>
-  <li class="list-group-item"><b>Numero de Baños: </b> @avion.numero_banos</li>
-  <li class="list-group-item"><b>Capacidad maxima: </b> @avion.capacidad_maxima</li>
-</ul>	
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
+<link rel="stylesheet" href="~/css/Delails.css" />
+
+<section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span ></span>
+                
+            </section>
+            
+        </section>
+
+        <form action="" class="form_contact">
+            <h2>Ver Aviones</h2>
+            <div class="user_info">
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <b>Id: </b> @avion.Id</li>
+                <li class="list-group-item"> <b>Marca: </b> @avion.Marca</li>
+                <li class="list-group-item"> <b>Modelo: </b> @avion.Modelo</li>
+                <li class="list-group-item"><b>Numero asientos: </b> @avion.Numero_asientos</li>
+                <li class="list-group-item"><b>Numero de baños: </b> @avion.Numero_banos</li>
+                <li class="list-group-item"><b>Capacidad Máxima: </b> @avion.Capacidad_maxima</li>
+              </ul>	
+              
+            </div>
+              <a href="javascript:history.back()"><button class="btn btn-primary hBack"  type="button">Atras</button></a>
+        </form>
+
+    </section>
